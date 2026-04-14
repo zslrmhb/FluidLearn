@@ -3,7 +3,7 @@
 
 ## Problem Statement
 
-Existing benchmarks mostly evaluate static performance or one-shot reasoning (Chollet, 2019; DeepMind, 2023), making it hard to isolate learning as a dynamic process. FluidLearn instead uses the dynamic approach: multi-round symbolic rule learning under controlled novelty. Because episodes are procedurally generated from transformation rules, the benchmark reduces contamination risk and provides deterministic, verifiable ground truth.
+Existing benchmarks mostly evaluate static performance or one-shot reasoning (Chollet, 2019; DeepMind, 2026), making it hard to isolate learning as a dynamic process. FluidLearn instead uses the dynamic approach: multi-round symbolic rule learning under controlled novelty. Because episodes are procedurally generated from transformation rules, the benchmark reduces contamination risk and provides deterministic, verifiable ground truth.
 
 We focus on four questions:
 1. Acquisition: Can a model acquire a rule from a few examples?
@@ -57,11 +57,7 @@ FluidLearn is partitioned into four primary cognitive modules:
 | Module III: Contextual Adaptation  | Tests context‑sensitive learning.  A mapping from context to rule family is sampled (e.g., if the length is even, reverse; if odd, append).  The model must infer the conditional mapping.  A rule shift is introduced at post‑shift (different context rule pair).                                                                                                     | 1.  **associative learning** (learn context–rule pairs)                                                                                                                                           | if len even: reverse<br>if odd: append <br><br>abc → abcabc         |
 | Module IV: Feedback Exploration    | Rather than predicting the output directly, the model must select which primitive to apply.  It is given a toolbox of candidate primitives with example input–output pairs (the “manual”).  During each round the model answers Query A by selecting an operation (via JSON), receives feedback (Correct/Incorrect + hint), and sees the result of applying its choice. | 1. **reinforcement learning** (use feedback to improve future actions)<br>2. **procedural learning** (select the right operation)                                                                 | choose op: reverse ❌ <br>hint: “length increases” → choose append ✅ |
 
-### Representational Modalities
-To decouple pure logical intelligence from specific domain syntaxes, tasks are presented across three independent encoding formats:
-1. **String**: Pronounceable pseudo-words computationally generated via CVC patterns (e.g., *baf*, *tashu*).
-2. **Number**: Arbitrary space-separated integer sequences stripped of semantic numeric value or scale.
-3. **Serialized 2D Grid**: Flat JSON arrays representing constrained integer matrices, enforcing spatial logic akin to pure visual reasoning tasks.
+
 
 ## Code Structure & Pipeline
 
