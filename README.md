@@ -3,19 +3,51 @@
 
 ## Problem Statement
 
-Existing benchmarks mostly evaluate static performance or one-shot reasoning (citation?), making it hard to isolate learning as a dynamic process. FluidLearn instead use the dynamic approach: multi-round symbolic rule learning under controlled novelty. Because episodes are procedurally generated from transformation rules, the benchmark reduces contamination risk and provides deterministic, verifiable ground truth.
+Existing benchmarks mostly evaluate static performance or one-shot reasoning (Chollet, 2019; DeepMind, 2023), making it hard to isolate learning as a dynamic process. FluidLearn instead uses the dynamic approach: multi-round symbolic rule learning under controlled novelty. Because episodes are procedurally generated from transformation rules, the benchmark reduces contamination risk and provides deterministic, verifiable ground truth.
 
 We focus on four questions:
-
-Acquisition: can a model acquire a rule from few examples?
-Efficiency: can a model improve efficiently as evidence accumulates?
-Adaptation: can a model recover after a rule shift?
-Transfer: can a model transfer the learned rule to held-out example?
-
+1. Acquisition: Can a model acquire a rule from a few examples?
+2. Efficiency: Can a model improve efficiently as evidence accumulates?
+3. Adaptation: Can a model recover after a rule shift?
+4. Transfer: Can a model transfer the learned rule to a held-out example?
 
 
-## Task & Benchmark Construction
+## Benchmark Construction
 
+### Representations
+
+| **Representation** | **Encoding Format**                                                                                                               | **Rationale and Operational Focus**                                                                                                                |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| String             | Pronounceable pseudo-words constructed from specific consonant-vowel patterns (e.g., CVC, CVCV, CVCCV). Examples: "baf", "tashu". | We want to minimize or make it hard for model to rely on memorization.                                                                             |
+| Number             | Space-separated sequences of fundamental digits (0-9). Example: `1 2 3`.                                                          | More diverse data format, we will treat number as abstract token without its semantic meaning.                                                     |
+| Serialized 2D Grid | Flat JSON formatting of restricted integer matrices. Example: `[1, 2]`.                                                           | Connects abstract logic to visual and spatial manipulation tasks (e.g., Sudoku, matrix transformation), evaluating padding, slicing, and rotation. |
+
+
+### Abstract Primitives
+Below are the primitives that define the rule in each sample.
+
+| **Primitive** | **String Implementation**                                | **Number Implementation** | **Grid Implementation**                                                    |
+| ------------- | -------------------------------------------------------- | ------------------------- | -------------------------------------------------------------------------- |
+| Permutation   | Total reversal of token order.                           | Same as String.           | Matrix transposition (swapping rows and columns).                          |
+| Reindexing    | Positional rotation by k offset.                         | Same as String.           | Cyclic shifting of specific rows or columns.                               |
+| Iteration     | Complete sequence duplication.                           | Same as String.           | Spatial tiling along designated grid axes.                                 |
+| Partitioning  | Filtering and retention based on even/odd token index.   | Same as String.           | Quadrant extraction and spatial cropping.                                  |
+| Extension     | Boundary padding by appending the first or last element. | Same as String.           | Symmetrical boundary padding using a constant integer.                     |
+| Reduction     | Isolation of the statistical majority token.             | Same as String.           | Matrix flattening to a 1D array or extraction of a core summary statistic. |
+
+### Contextual Primitives
+
+Module III uses _contextual primitives_ that define conditions mapping to rules, encouraging the model to detect context and adapt.  Examples include:
+
+- **Size parity:** even/odd length sequences.
+- **Repetition presence:** whether the sequence contains duplicates.
+- **Boundary relation:** whether the first and last items are identical.
+- **Majority existence:** whether a majority item exists.
+- **Local pattern consistency:** whether items at even and odd positions are consistent.
+
+Each context type is paired with an associated transformation rule, requiring the model to identify the context and apply the correct rule.
+
+### Modules
 FluidLearn is partitioned into four primary cognitive modules:
 
 | **Module**                         | **Description**                                                                                                                                                                                                                                                                                                                                                         | sub-abilities measured                                                                                                                                                                            | **Example**                                                         |
