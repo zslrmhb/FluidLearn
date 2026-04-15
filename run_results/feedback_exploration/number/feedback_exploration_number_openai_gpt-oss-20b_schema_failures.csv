@@ -1,0 +1,4 @@
+task_name,difficulty,shift_type,template_family,shifted_template_family,error_type,error_message
+feedback_exploration_number,medium,full_rule_remap,,,ValidationError,"Pre-phase failed: 1 validation error for SingleAnswerSchema
+  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='We need to discover the ...answer"": ""7 4 2 6 2""\n}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid"

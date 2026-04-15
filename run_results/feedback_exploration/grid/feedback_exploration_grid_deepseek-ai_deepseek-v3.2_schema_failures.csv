@@ -1,0 +1,597 @@
+task_name,difficulty,shift_type,template_family,shifted_template_family,error_type,error_message
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": ""[[""shagchi""]]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `,` or `}` at line 1 column 16', 'input': '{""answer"": ""[[""shagchi""]]""}', 'ctx': {'error': 'expected `,` or `}` at line 1 column 16'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"":[[""shov""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['shov']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,easy,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[9, 9, 9, 9], [9, ""mume"", ""femta"", 9], [9, 9, 9, 9]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [[9, 9, 9, 9], [9, 'mume', 'femta', 9], [9, 9, 9, 9]], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""shuvzo"", ""shuvzo"", ""min"", ""min""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['shuvzo', 'shuvzo', 'min', 'min']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""nadu"", ""nabso"", ""nadu"", ""nabso""], [""vazu"", ""nabso"", ""vazu"", ""nabso""], [""nabso"", ""nabso"", ""nabso"", ""nabso""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['nadu', 'nabso', 'nadu', 'nabso'], ['vazu', 'nabso', 'vazu', 'nabso'], ['nabso', 'nabso', 'nabso', 'nabso']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": ""[[""nabe"", ""rig"", ""pek"", ""rig"", ""nabe""]]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `,` or `}` at line 1 column 16', 'input': '{""answer"": ""[[""nabe"", ""rig"", ""pek"", ""rig"", ""nabe""]]""}', 'ctx': {'error': 'expected `,` or `}` at line 1 column 16'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""gide"", ""misi"", ""gide"", ""puf"", ""misi""], [""gide"", ""misi"", ""gide"", ""puf"", ""misi""], [""gide"", ""misi"", ""gide"", ""puf"", ""misi""], [""gide"", ""misi"", ""gide"", ""puf"", ""misi""], [""gide"", ""misi"", ""gide"", ""puf"", ""misi""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['gide', 'misi', 'gide', 'puf', 'misi'], ['gide', 'misi', 'gide', 'puf', 'misi'], ['gide', 'misi', 'gide', 'puf', 'misi'], ['gide', 'misi', 'gide', 'puf', 'misi'], ['gide', 'misi', 'gide', 'puf', 'misi']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,easy,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[0, 0, 0, 0, 0, 0, 0], [0, ""vas"", ""sirba"", ""vas"", ""sirba"", ""vas"", 0], [0, 0, 0, 0, 0, 0, 0]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [[0, 0, 0, 0, 0, 0, 0], [0, 'vas', 'sirba', 'vas', 'sirba', 'vas', 0], [0, 0, 0, 0, 0, 0, 0]], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""sheso""], [""sik""], [""sik""], [""sheso""], [""sik""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['sheso'], ['sik'], ['sik'], ['sheso'], ['sik']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[9, 9, 9, 9, 9], [9, ""put"", ""put"", ""put"", 9], [9, ""put"", ""put"", ""put"", 9], [9, 9, 9, 9, 9]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [[9, 9, 9, 9, 9], [9, 'put', 'put', 'put', 9], [9, 'put', 'put', 'put', 9], [9, 9, 9, 9, 9]], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": ""[[""shori"", ""shori""], [""shori"", ""shori""]]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `,` or `}` at line 1 column 16', 'input': '{""answer"": ""[[""shori"", ""shori""], [""shori"", ""shori""]]""}', 'ctx': {'error': 'expected `,` or `}` at line 1 column 16'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""sekku"", ""gevcho""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['sekku', 'gevcho']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"":""[[""zidgo""]]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `,` or `}` at line 1 column 15', 'input': '{""answer"":""[[""zidgo""]]""}', 'ctx': {'error': 'expected `,` or `}` at line 1 column 15'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"":[[""chakno""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['chakno']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,easy,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""kefne"", ""kefne""], [""kefne"", ""vopi""], [""vopi"", ""zul""], [""kefne"", ""kefne""], [""kefne"", ""vopi""], [""vopi"", ""zul""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['kefne', 'kefne'], ['kefne', 'vopi'], ['vopi', 'zul'], ['kefne', 'kefne'], ['kefne', 'vopi'], ['vopi', 'zul']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""sut"", ""temga""], [""gin"", ""temga""], [""gin"", ""sut""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['sut', 'temga'], ['gin', 'temga'], ['gin', 'sut']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": []}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""roko"", ""fezri"", ""nurfi"", ""fezri"", ""fezri""], [""roko"", ""fezri"", ""nurfi"", ""fezri"", ""fezri""], [""roko"", ""fezri"", ""nurfi"", ""fezri"", ""fezri""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['roko', 'fezri', 'nurfi', 'fezri', 'fezri'], ['roko', 'fezri', 'nurfi', 'fezri', 'fezri'], ['roko', 'fezri', 'nurfi', 'fezri', 'fezri']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+Based on earlier trials, the feedback “Shape hint: the correct output is a 1×1 grid” when the input was 3×1 means the transformation reduces the grid to 1×1.  
+
+Possible operators that reduce a 3×1 to 1×1 from the earlier toolbox:  
+- Op_3 (partitioning_crop_quadrant_4): example gave [[], []] for 3×1, not 1×1.  
+- Op_6 (partitioning_crop_quadrant_1): example gave [[""duz""]] → 1×1 from 3×1.  
+
+Since round 3 feedback after choosing Op_3 still said “Shape hint: correct output is a 1×1 grid”, Op_3 may not give 1×1 for 3×1 (it gave 0×0 in example). So maybe the hidden rule is Op_6, but we can only choose from numbers 1–5 in trials. In final query they say “Apply the learned transformation rule to the new query input.”  
+
+Given consistent 1×1 output hint for 3×1 input, and from toolbox only Op_6’s example yielded 1×1 from 3×1, the learned rule is Op_6 (partitioning_crop_quadrant_1) even if we couldn’t choose 6 in trials.  
+
+Now apply Op_6 to the new query input `[[""nino"",""rom""],[""rom"",""duz""],[""fotre"",""sofgi""]]` (3 rows, 2 cols).  
+
+Quadrant 1 means: split grid into 4 quadrants:  
+Rows split: top half = ceil(3/2)=2 rows for top half? Usually 3 rows → top half = 1 row? Actually quadrant 1: top-left quarter. But for odd rows, maybe take floor(rows/2) rows for top half and floor(cols/2) cols for left half:  
+Rows: 3 → top half = 1 row (row 0)  
+Cols: 2 → left half = 1 col (col 0)  
+
+So top-left quadrant = row 0, col 0: `[[""nino""]]`  
+
+Thus the transformed result = `[[""nino""]]`.
+
+{""answer"": ""[['nino']]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected value at line 1 column 1', 'input': 'Based on earlier trials, the feedback “Shape hint: the correct output is a 1×1 grid” when the input was 3×1 means the transformation reduces the grid to 1×1.  \n\nPossible operators that reduce a 3×1 to 1×1 from the earlier toolbox:  \n- Op_3 (partitioning_crop_quadrant_4): example gave [[], []] for 3×1, not 1×1.  \n- Op_6 (partitioning_crop_quadrant_1): example gave [[""duz""]] → 1×1 from 3×1.  \n\nSince round 3 feedback after choosing Op_3 still said “Shape hint: correct output is a 1×1 grid”, Op_3 may not give 1×1 for 3×1 (it gave 0×0 in example). So maybe the hidden rule is Op_6, but we can only choose from numbers 1–5 in trials. In final query they say “Apply the learned transformation rule to the new query input.”  \n\nGiven consistent 1×1 output hint for 3×1 input, and from toolbox only Op_6’s example yielded 1×1 from 3×1, the learned rule is Op_6 (partitioning_crop_quadrant_1) even if we couldn’t choose 6 in trials.  \n\nNow apply Op_6 to the new query input `[[""nino"",""rom""],[""rom"",""duz""],[""fotre"",""sofgi""]]` (3 rows, 2 cols).  \n\nQuadrant 1 means: split grid into 4 quadrants:  \nRows split: top half = ceil(3/2)=2 rows for top half? Usually 3 rows → top half = 1 row? Actually quadrant 1: top-left quarter. But for odd rows, maybe take floor(rows/2) rows for top half and floor(cols/2) cols for left half:  \nRows: 3 → top half = 1 row (row 0)  \nCols: 2 → left half = 1 col (col 0)  \n\nSo top-left quadrant = row 0, col 0: `[[""nino""]]`  \n\nThus the transformed result = `[[""nino""]]`.\n\n{""answer"": ""[[\'nino\']]""}', 'ctx': {'error': 'expected value at line 1 column 1'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""suko"", ""zazu""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['suko', 'zazu']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,easy,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": [[""bizcha"", ""pelki"", ""bizcha"", ""pelki""], [""bizcha"", ""pelki"", ""bizcha"", ""pelki""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answer',), 'msg': 'Input should be a valid string', 'input': [['bizcha', 'pelki', 'bizcha', 'pelki'], ['bizcha', 'pelki', 'bizcha', 'pelki']], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+feedback_exploration_grid,hard,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": ""[[""bishbo"", ""shebshe"", ""gar"", ""bishbo"", ""dofe""], [""bishbo"", ""shebshe"", ""gar"", ""bishbo"", ""dofe""]]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `,` or `}` at line 1 column 16', 'input': '{""answer"": ""[[""bishbo"", ""shebshe"", ""gar"", ""bishbo"", ""dofe""], [""bishbo"", ""shebshe"", ""gar"", ""bishbo"", ""dofe""]]""}', 'ctx': {'error': 'expected `,` or `}` at line 1 column 16'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+feedback_exploration_grid,medium,full_rule_remap,,,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answer"": ""[[""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""]]""}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answer"": {
+      ""title"": ""Answer"",
+      ""type"": ""string""
+    }
+  },
+  ""required"": [
+    ""answer""
+  ],
+  ""title"": ""SingleAnswerSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `,` or `}` at line 1 column 16', 'input': '{""answer"": ""[[""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""], [""keri"", ""zun"", ""zun"", ""doch"", ""doch""]]""}', 'ctx': {'error': 'expected `,` or `}` at line 1 column 16'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"

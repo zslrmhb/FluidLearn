@@ -1,0 +1,17 @@
+chain,chain_families,difficulty,error_type,error_message
+iteration_duplicate -> extension_append_boundary_side_first,iteration -> extension,medium,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""pez min pez""]}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+reindexing_rotate_k_-1 -> partitioning_by_offset_offset_0,reindexing -> partitioning,hard,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""poche pig""]}]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+reindexing_rotate_k_-1 -> partitioning_by_offset_offset_1,reindexing -> partitioning,medium,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""nesh""]}\n\n</invoke>', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+partitioning_by_offset_offset_1 -> extension_append_boundary_side_first,partitioning -> extension,medium,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""pis rotshi pis rotshi""]}]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"

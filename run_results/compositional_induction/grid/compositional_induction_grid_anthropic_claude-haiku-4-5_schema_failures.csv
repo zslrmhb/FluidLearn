@@ -1,0 +1,20 @@
+chain,chain_families,difficulty,error_type,error_message
+permutation_transpose -> partitioning_crop_quadrant_4,permutation -> partitioning,medium,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[0], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+partitioning_crop_quadrant_4 -> reindexing_spatial_shift_axis_0_shift_-1,partitioning -> reindexing,medium,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+partitioning_crop_quadrant_4 -> reindexing_spatial_shift_axis_1_shift_1,partitioning -> reindexing,medium,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[0], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+partitioning_crop_quadrant_4 -> extension_pad_pad_val_9,partitioning -> extension,medium,ValidationError,"Pre-phase failed: 2 validation errors for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[2], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+answers.1
+  Input should be a valid string [type=string_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"

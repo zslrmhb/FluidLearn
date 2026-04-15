@@ -1,0 +1,141 @@
+context_family,shifted_context_family,difficulty,shift_type,error_type,error_message
+majority_existence,majority_existence,medium,full_rule_remap_same_context,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: EOF while parsing a string at line 1 column 2', 'input': '{""', 'ctx': {'error': 'EOF while parsing a string at line 1 column 2'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+local_pattern_consistency,majority_existence,hard,full_context_and_rule_remap,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: EOF while parsing a string at line 1 column 2', 'input': '{""', 'ctx': {'error': 'EOF while parsing a string at line 1 column 2'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+majority_existence,majority_existence,medium,full_rule_remap_same_context,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: EOF while parsing a string at line 1 column 2', 'input': '{""', 'ctx': {'error': 'EOF while parsing a string at line 1 column 2'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+boundary_relation,size_parity,hard,full_context_and_rule_remap,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [""4 2 3
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: EOF while parsing a string at line 1 column 19', 'input': '{""answers"": [""4 2 3', 'ctx': {'error': 'EOF while parsing a string at line 1 column 19'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+boundary_relation,boundary_relation,easy,single_rule_remap_same_context,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: EOF while parsing a string at line 1 column 2', 'input': '{""', 'ctx': {'error': 'EOF while parsing a string at line 1 column 2'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"

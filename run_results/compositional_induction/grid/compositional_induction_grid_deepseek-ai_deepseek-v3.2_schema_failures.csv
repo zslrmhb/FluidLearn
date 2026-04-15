@@ -1,0 +1,141 @@
+chain,chain_families,difficulty,error_type,error_message
+iteration_tile_axis_0 -> extension_pad_pad_val_0,iteration -> extension,medium,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[0, 0, 0], [0, 0, 0], [0, 1, 0], [0, 0, 0], [0, 0, 0], [0, 2, 0], [0, 0, 0], [0, 0, 0], [0, 2, 0], [0, 0, 0], [0, 0, 0]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 2), 'msg': 'Input should be a valid string', 'input': [0, 1, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 3), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 4), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 5), 'msg': 'Input should be a valid string', 'input': [0, 2, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 6), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 7), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 8), 'msg': 'Input should be a valid string', 'input': [0, 2, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 9), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 10), 'msg': 'Input should be a valid string', 'input': [0, 0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+extension_pad_pad_val_1,extension,easy,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[1, 1, &, 1], [1, 1, 2, 1], [1, 0, 1, 1], [1, 1, &, 1]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected value at line 1 column 21', 'input': '{""answers"": [[1, 1, &, 1], [1, 1, 2, 1], [1, 0, 1, 1], [1, 1, &, 1]]}', 'ctx': {'error': 'expected value at line 1 column 21'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+reindexing_spatial_shift_axis_0_shift_-1,reindexing,easy,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[1, 1], [0, 1]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [1, 1], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [0, 1], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+partitioning_crop_quadrant_3 -> reindexing_spatial_shift_axis_0_shift_-1,partitioning -> reindexing,hard,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[2], [0]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [2], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+reindexing_spatial_shift_axis_1_shift_1 -> permutation_transpose,reindexing -> permutation,medium,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [""1"", ""0""], [""1"", ""0""]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 25', 'input': '{""answers"": [""1"", ""0""], [""1"", ""0""]}', 'ctx': {'error': 'key must be a string at line 1 column 25'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"

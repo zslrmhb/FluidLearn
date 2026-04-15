@@ -5,8 +5,6 @@ __pycache__/
 
 # Output datasets
 datasets_output/
-run_results/
-aggregated_results.json
 
 # IDEs
 .vscode/

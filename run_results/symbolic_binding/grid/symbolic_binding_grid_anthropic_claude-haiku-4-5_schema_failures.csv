@@ -1,0 +1,17 @@
+rule,rule_family,difficulty,error_type,error_message
+partitioning_crop_quadrant_4,partitioning,hard,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+extension_pad_pad_val_0,extension,medium,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""[[0, 0, 0], [0, 0, 0],... [0, 0, 0], [1, 1, 1]]]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+partitioning_crop_quadrant_2,partitioning,medium,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+partitioning_crop_quadrant_2,partitioning,medium,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"

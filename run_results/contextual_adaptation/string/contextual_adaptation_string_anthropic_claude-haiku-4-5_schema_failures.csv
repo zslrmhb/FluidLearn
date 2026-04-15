@@ -1,0 +1,21 @@
+context_family,shifted_context_family,difficulty,shift_type,error_type,error_message
+boundary_relation,repetition_presence,hard,full_context_and_rule_remap,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""sama kutvi kutvi sama""]}]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+boundary_relation,boundary_relation,easy,single_rule_remap_same_context,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""shen shen gide shen gi...hen gide shen gide""]}\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+repetition_presence,repetition_presence,medium,full_rule_remap_same_context,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""shori nesh""]}\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+repetition_presence,repetition_presence,medium,full_rule_remap_same_context,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""suz gevcho zig gevcho gevcho sekku""]}\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+boundary_relation,boundary_relation,medium,full_rule_remap_same_context,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""revu""]}]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"

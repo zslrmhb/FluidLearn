@@ -1,0 +1,2 @@
+task_name,difficulty,shift_type,template_family,shifted_template_family,error_type,error_message
+feedback_exploration_grid,hard,full_rule_remap,,,IndexError,Pre-phase failed: list index out of range

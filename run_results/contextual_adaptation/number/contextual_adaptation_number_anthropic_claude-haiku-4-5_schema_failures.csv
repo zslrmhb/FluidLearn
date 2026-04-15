@@ -1,0 +1,13 @@
+context_family,shifted_context_family,difficulty,shift_type,error_type,error_message
+repetition_presence,repetition_presence,medium,full_rule_remap_same_context,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""1""]}]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+repetition_presence,repetition_presence,easy,single_rule_remap_same_context,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""2""]}]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"
+repetition_presence,repetition_presence,medium,full_rule_remap_same_context,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""1 2""]}\n', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"

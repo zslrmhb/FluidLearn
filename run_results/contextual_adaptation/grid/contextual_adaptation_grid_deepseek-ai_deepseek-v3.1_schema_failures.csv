@@ -1,0 +1,85 @@
+context_family,shifted_context_family,difficulty,shift_type,error_type,error_message
+boundary_relation,boundary_relation,easy,single_rule_remap_same_context,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [""1"", ""1"", ""1"", ""1""], ""1"", ""1"", ""0"", ""2"", ""1""], ""1"", ""2"", ""1"", ""1""], ""1"", ""1"", ""1"", ""1""]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: expected `:` at line 1 column 38', 'input': '{""answers"": [""1"", ""1"", ""1"", ""1""], ""1"", ""1"", ""0"", ""2"", ""1""], ""1"", ""2"", ""1"", ""1""], ""1"", ""1"", ""1"", ""1""]}', 'ctx': {'error': 'expected `:` at line 1 column 38'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+majority_existence,size_parity,hard,full_context_and_rule_remap,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[0, 0], [0, 1]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [0, 0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [0, 1], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+majority_existence,repetition_presence,hard,full_context_and_rule_remap,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[], []]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"

@@ -1,0 +1,197 @@
+rule,rule_family,difficulty,error_type,error_message
+permutation_transpose,permutation,hard,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [""9"", ""9"", ""9""], [""9"", ""2"", ""9""], [""9"", ""4"", ""9""], [""9"", ""9"", ""9""]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 30', 'input': '{""answers"": [""9"", ""9"", ""9""], [""9"", ""2"", ""9""], [""9"", ""4"", ""9""], [""9"", ""9"", ""9""]]}', 'ctx': {'error': 'key must be a string at line 1 column 30'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+iteration_tile_axis_1,iteration,hard,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [""9"", ""9"", ""9"", ""9""], [""9"", ""1"", ""3"", ""9""], [""9"", ""9"", ""9"", ""9""]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 35', 'input': '{""answers"": [""9"", ""9"", ""9"", ""9""], [""9"", ""1"", ""3"", ""9""], [""9"", ""9"", ""9"", ""9""]}', 'ctx': {'error': 'key must be a string at line 1 column 35'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+extension_pad_pad_val_9,extension,hard,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[], []]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+permutation_transpose,permutation,medium,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [""9"", ""9"", ""9""], [""9"", ""1"", ""9""], [""9"", ""0"", ""9""], [""9"", ""1"", ""9""], [""9"", ""9"", ""9""]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'json_invalid', 'loc': (), 'msg': 'Invalid JSON: key must be a string at line 1 column 30', 'input': '{""answers"": [""9"", ""9"", ""9""], [""9"", ""1"", ""9""], [""9"", ""0"", ""9""], [""9"", ""1"", ""9""], [""9"", ""9"", ""9""]}', 'ctx': {'error': 'key must be a string at line 1 column 30'}, 'url': 'https://errors.pydantic.dev/2.12/v/json_invalid'}]
+---"
+partitioning_crop_quadrant_4,partitioning,hard,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[], []]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+partitioning_crop_quadrant_4,partitioning,hard,ResponseParsingError,"Post-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[3], [3], [0]]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [3], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [3], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 2), 'msg': 'Input should be a valid string', 'input': [0], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"
+partitioning_crop_quadrant_2,partitioning,medium,ResponseParsingError,"Pre-phase failed: Response parsing failed.
+Input Value:
+---
+{""answers"": [[], []]}
+---
+Target Schema:
+---
+{
+  ""properties"": {
+    ""answers"": {
+      ""items"": {
+        ""type"": ""string""
+      },
+      ""title"": ""Answers"",
+      ""type"": ""array""
+    }
+  },
+  ""required"": [
+    ""answers""
+  ],
+  ""title"": ""RoundOutputSchema"",
+  ""type"": ""object""
+}
+---
+Parsing Error:
+---
+[{'type': 'string_type', 'loc': ('answers', 0), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}, {'type': 'string_type', 'loc': ('answers', 1), 'msg': 'Input should be a valid string', 'input': [], 'url': 'https://errors.pydantic.dev/2.12/v/string_type'}]
+---"

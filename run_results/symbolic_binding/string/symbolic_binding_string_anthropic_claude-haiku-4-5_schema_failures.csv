@@ -1,0 +1,5 @@
+rule,rule_family,difficulty,error_type,error_message
+extension_append_boundary_side_first,extension,hard,ValidationError,"Post-phase failed: 1 validation error for RoundOutputSchema
+answers
+  Input should be a valid array [type=list_type, input_value='[""pivvu""]}}', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.12/v/list_type"

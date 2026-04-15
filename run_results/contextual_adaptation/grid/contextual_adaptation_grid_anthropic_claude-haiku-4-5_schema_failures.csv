@@ -1,0 +1,13 @@
+context_family,shifted_context_family,difficulty,shift_type,error_type,error_message
+majority_existence,majority_existence,medium,full_rule_remap_same_context,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[2], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+majority_existence,majority_existence,medium,full_rule_remap_same_context,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[0], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
+repetition_presence,repetition_presence,medium,full_rule_remap_same_context,ValidationError,"Pre-phase failed: 1 validation error for RoundOutputSchema
+answers.0
+  Input should be a valid string [type=string_type, input_value=[2], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type"
