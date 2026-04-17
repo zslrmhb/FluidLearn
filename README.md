@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/zslrmhb/FluidLearn)
+
 # FluidLearn: A Procedural Benchmark for Learning, Adaptation, and Transfer Under Novelty 
 
 
