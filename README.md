@@ -1,4 +1,5 @@
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/zslrmhb/FluidLearn)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/zslrmhb/FluidLearn) \
+[Full Writeup](https://www.kaggle.com/competitions/kaggle-measuring-agi/writeups/new-writeup-1774075558450)
 
 # FluidLearn: A Procedural Benchmark for Learning, Adaptation, and Transfer Under Novelty 
 
